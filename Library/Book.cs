@@ -206,7 +206,7 @@ namespace Library
                 {
                     int MapleCount = 0;
                     int DownTownCount = 0;
-                    if(bookInfo[i][].StartsWith("ISBN: 1"))
+                    if (bookInfo[i][1].StartsWith("ISBN: 1"))
                     {
                         MapleCount++;
 

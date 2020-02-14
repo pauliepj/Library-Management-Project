@@ -8,10 +8,9 @@ namespace Library
 {
     class Branch
     {
-        int bookAmount = 0;
         public void Maplewood(int ISBN)
         {
-
+            ISBN = 0;
             Book.BookInfo(0);
         }
 
