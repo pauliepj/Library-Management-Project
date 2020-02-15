@@ -202,12 +202,15 @@ namespace Library
             }
             else if (ISBN == 0)
             {
+                int DownTownCount = 0;
+                int MapleCount = 0;
                 for(int i=0; i<30; i++ )
                 {
-                    int MapleCount = 0;
-                    int DownTownCount = 0;
-                    if(bookInfo[i][].StartsWith("ISBN: 1"))
-                    {
+                   
+                    
+                    if(bookInfo[i][1].Contains("ISBN: 1"))
+                    { 
+                        
                         MapleCount++;
 
                     }
@@ -215,8 +218,9 @@ namespace Library
                     {
                         DownTownCount++;
                     }
-                    Console.WriteLine("Maplewood has " +MapleCount+ "books while the Downtown branch has "+ DownTownCount + "books.");
+                   
                 }
+                Console.WriteLine("Maplewood has " +MapleCount+ " books while the Downtown branch has "+ DownTownCount + " books.");
             }
             else
             {
