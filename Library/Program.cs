@@ -10,6 +10,7 @@ namespace Library
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("For total number of books by branch, type 1. for Customer Data, type 2. To Add a new customer, press 3. ");
             int caseswitch = Convert.ToInt32(Console.ReadLine());
             switch (caseswitch)

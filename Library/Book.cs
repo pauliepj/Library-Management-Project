@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    class Book
+    public class Book
     {
-        private string author;
-        private int ISBN;
-        private string title;
-        private int pages;
+        
         public static void BookInfo(int ISBN)
         {
+            //make a list of books using a jagged array
             string[][] bookInfo = new string[30][];
             bookInfo[0] = new string[4] { "ISBN: 123, ", "Title: The Old Man and the Sea, ", "Pages: 47, ", "Author: Some Author"};
             bookInfo[1] = new string[4] { "ISBN: 234, ", "Title: Age Old Prophecies, ", "Pages: 147, ", "Author: Fakey Mcfake" };
@@ -45,7 +43,7 @@ namespace Library
             bookInfo[27] = new string[4] { "ISBN: 192, ", "Title: World's Greatest Dogs, ", "Pages: 47, ", "Author: B.Eagle" };
             bookInfo[28] = new string[4] { "ISBN: 193, ", "Title: Practical Magic, ", "Pages: 147, ", "Author: Saab Rina" };
             bookInfo[29] = new string[4] { "ISBN: 194, ", "Title: Google Eyes, ", "PAges: 700, ", "Author: S. Pie" };
-            
+            //list book by ISBN
             if (ISBN == 123)
             {
 
@@ -208,7 +206,7 @@ namespace Library
                 {
                    
                     
-                    if(bookInfo[i][1].Contains("ISBN: 1"))
+                    if(bookInfo[i][0].Contains("ISBN: 1"))
                     { 
                         
                         MapleCount++;
