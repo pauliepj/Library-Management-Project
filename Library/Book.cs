@@ -206,11 +206,18 @@ namespace Library
                 int MapleCount = 0;
                 for(int i=0; i<30; i++ )
                 {
+<<<<<<< HEAD
                    
                     
                     if(bookInfo[i][1].Contains("ISBN: 1"))
                     { 
                         
+=======
+                    int MapleCount = 0;
+                    int DownTownCount = 0;
+                    if (bookInfo[i][1].StartsWith("ISBN: 1"))
+                    {
+>>>>>>> 96df61a5e52f686ce33b7737b143638069fd264b
                         MapleCount++;
 
                     }
